@@ -36,7 +36,7 @@ function playerSelect() {
   let playerChoice;
   let validChoice = false;
   while (validChoice == false) {
-    playerChoice = prompt("Choose between Rock, Paper, and Scissors");
+    // playerChoice = prompt("Choose between Rock, Paper, and Scissors");
     validChoice = choices.includes(playerChoice.toLowerCase());
   }
   return playerChoice.toLowerCase();

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background: #003973;
+	background: linear-gradient(to top, #003973, #e5e5be);
+	font-family: "Comfortaa", cursive;
+}
+
+h1 {
+	padding-top: 10vh;
+	font-size: 100px;
+	color: #003973;
+}
+
+/* Playing Field */
+main {
+	width: 80vw;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 50px;
+}
+
+img {
+	margin: 30px;
+	height: 200px;
+	width: auto;
+	border-radius: 50%;
+}
+
+/* Selectable choices */
+.clickable:hover {
+	cursor: pointer;
+	box-shadow: 0 0 40px 20px #414042;
+}
+
+.plyr-img,
+.comp-img {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.player-names {
+	text-align: center;
+	font-size: 50px;
+	color: #e5e5be;
+}
+
+.field {
+	color: #414042;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	bottom: 15vh;
+}
+
+.field h2 {
+	text-align: center;
+	font-size: 50px;
+}
+
+.scores {
+	position: relative;
+	width: 20vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 50px;
+}
+
+.scores h2 {
+	font-size: 80px;
+}
