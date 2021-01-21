@@ -68,7 +68,7 @@ img {
 	bottom: 15vh;
 }
 
-.field h2 {
+.field p {
 	text-align: center;
 	font-size: 50px;
 }
@@ -82,6 +82,30 @@ img {
 	top: 50px;
 }
 
-.scores h2 {
+.scores p {
 	font-size: 80px;
+}
+
+.reset-btn {
+	font-family: "Comfortaa", cursive;
+	font-size: 35px;
+	font-weight: bold;
+	position: relative;
+	top: 20vh;
+	margin: auto;
+	border: none;
+	background: none;
+	border-radius: 15px;
+	color: rgba(137, 37, 62, 0.8);
+}
+
+p.winner {
+	font-size: 25px;
+	position: relative;
+	top: 10vh;
+}
+
+.reset-btn:hover {
+	cursor: pointer;
+	color: rgba(137, 37, 62, 1);
 }
