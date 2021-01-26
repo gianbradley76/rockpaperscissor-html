@@ -38,12 +38,19 @@ img {
 	height: 200px;
 	width: auto;
 	border-radius: 50%;
+	opacity: 0.5;
+	transition: all 0.6s ease-in-out;
 }
 
 /* Selectable choices */
+.clickable {
+	transition: all 0.3s ease-in-out;
+}
+
 .clickable:hover {
+	transform: scale(1.1);
 	cursor: pointer;
-	box-shadow: 0 0 40px 20px #414042;
+	opacity: 1;
 }
 
 .plyr-img,
@@ -97,6 +104,7 @@ img {
 	background: none;
 	border-radius: 15px;
 	color: rgba(137, 37, 62, 0.8);
+	transition: all 0.2s ease-in-out;
 }
 
 p.winner {
@@ -108,4 +116,10 @@ p.winner {
 .reset-btn:hover {
 	cursor: pointer;
 	color: rgba(137, 37, 62, 1);
+	transform: scale(1.25);
+}
+
+.selected {
+	transform: scale(1.1);
+	opacity: 1;
 }
