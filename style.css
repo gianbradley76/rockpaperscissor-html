@@ -5,12 +5,14 @@
 	box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 100vw;
-	height: 100vh;
 	background: #003973;
 	background: linear-gradient(to top, #003973, #e5e5be);
 	font-family: "Comfortaa", cursive;
@@ -59,6 +61,11 @@ img {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+.img-inner {
+	display: flex;
+	flex-direction: row;
 }
 
 .player-names {
@@ -122,4 +129,69 @@ p.winner {
 .selected {
 	transform: scale(1.1);
 	opacity: 1;
+}
+
+@media only screen and (max-width: 720px) {
+	html {
+		height: 100%;
+	}
+
+	h1 {
+		padding-top: 5vh;
+		font-size: 50px;
+		color: #003973;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.player {
+		flex-direction: column;
+	}
+
+	.computer {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.computer p,
+	#comp-score {
+		color: #003973;
+	}
+
+	#player-score {
+		color: #e5e5be;
+	}
+
+	.comp-img,
+	.plyr-img {
+		flex-direction: row;
+	}
+
+	img {
+		height: 150px;
+	}
+
+	.field {
+		flex-direction: column;
+		bottom: 0;
+	}
+
+	.scores {
+		top: 0;
+		width: 100%;
+	}
+
+	p.winner {
+		font-size: 25px;
+		position: relative;
+		top: 0;
+	}
+
+	.reset-btn {
+		padding-top: 20px;
+		top: 0;
+	}
 }
