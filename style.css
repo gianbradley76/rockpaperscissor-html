@@ -131,20 +131,32 @@ p.winner {
 	opacity: 1;
 }
 
-@media only screen and (max-width: 720px) {
+@media all and (max-width: 500px) {
 	html {
+		height: 100%;
+	}
+
+	body {
 		height: 100%;
 	}
 
 	h1 {
 		padding-top: 5vh;
-		font-size: 50px;
+		font-size: 30px;
 		color: #003973;
 	}
 
 	main {
 		display: flex;
 		flex-direction: column-reverse;
+	}
+
+	.player-names {
+		font-size: 25px;
+	}
+
+	.field p {
+		font-size: 30px;
 	}
 
 	.player {
@@ -165,13 +177,22 @@ p.winner {
 		color: #e5e5be;
 	}
 
+	.field {
+		margin: 20px 0;
+	}
+
+	.field p {
+		font-size: 25px;
+	}
+
 	.comp-img,
 	.plyr-img {
 		flex-direction: row;
 	}
 
 	img {
-		height: 150px;
+		margin: 15px;
+		height: 75px;
 	}
 
 	.field {
@@ -184,14 +205,18 @@ p.winner {
 		width: 100%;
 	}
 
+	.scores p {
+		font-size: 40px;
+	}
+
 	p.winner {
-		font-size: 25px;
-		position: relative;
+		font-size: 20px;
 		top: 0;
 	}
 
 	.reset-btn {
 		padding-top: 20px;
 		top: 0;
+		font-size: 20px;
 	}
 }
